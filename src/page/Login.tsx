@@ -21,14 +21,16 @@ export default function Login() {
       <div className="relative z-20 flex items-center justify-center h-full text-white">
         <form className="flex flex-col p-5 w-[345px] h-[410px]">
           <h1 className="text-3xl text-white">Login</h1>
-          <span className="mt-4 text-sm text-[#9e9e9e]">
-            Enter Your Phone Number
-          </span>
           <input
             type="text"
             className="mt-6 p-3 text-sm border-none outline-none rounded bg-[#0E0E0E]/75 text-white placeholder:text-gray-400"
-            placeholder="09 "
+            placeholder="User Name "
           />
+          <input
+            type="text"
+            className="mt-6 p-3 text-sm border-none outline-none rounded bg-[#0E0E0E]/75 text-white placeholder:text-gray-400"
+            placeholder="Email "
+          />          
           <button className="bg-white text-sm mt-6 text-[#2b2b2b] rounded p-3 cursor-pointer hover:bg-gray-300 duration-300">
             Send Code
           </button>

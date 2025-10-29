@@ -7,7 +7,7 @@ import Home from "./page/Home";
 
 function App() {
   return (
-    <>
+    <div className="bg-[#151515] h-screen">
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

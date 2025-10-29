@@ -1,8 +1,11 @@
 // import { Link } from "react-router"
 
+import { useLocation } from "react-router";
 import { Link } from "react-router";
 
 function Navbar() {
+  const pathName = useLocation()
+  
   const navItem = [
     {
       title: "Log in",
@@ -18,14 +21,12 @@ function Navbar() {
     },    
   ];
 
-  const pathName = "/product";
-
   return (
-    <div className="w-full bg-[#151515] flex justify-center">
-      <div className="z-[1000] w-[80%] flex items-center h-[70px] justify-between">
+    <div className="w-full z-[1000] sticky left-0 top-0 bg-[#151515] flex justify-center">
+      <div className="w-[80%] flex items-center h-[70px] justify-between">
         <Link to="/">
           <span className="text-xl font-bold text-amber-50 select-none">
-            W E A T E R
+            Weater
           </span>
         </Link>
         {/* <input
@@ -43,7 +44,7 @@ function Navbar() {
             >
               <span
                 className={
-                  item.href === pathName
+                  item.href === pathName.pathname
                     ? "text-[#9e9e9e]"
                     : "text-white"
                 }

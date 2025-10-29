@@ -1,8 +1,21 @@
+import Product from "./Product"
 
 function Products() {
   return (
-    <div className="w-full h-10 bg-amber-200">
-        
+    <div className="w-full flex justify-center flex-wrap gap-5 h-auto">
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
     </div>
   )
 }
