@@ -7,12 +7,9 @@ function Navbar() {
   const pathName = useLocation()
   
   const navItem = [
+
     {
-      title: "Log in",
-      href: "/login",
-    },
-    {
-      title: "Register",
+      title: "Login",
       href: "/register",
     },
     {

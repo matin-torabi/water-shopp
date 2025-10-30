@@ -1,12 +1,6 @@
 import { useState, useEffect } from "react";
 import Products from "../components/products/Products";
-
-interface WeatherData {
-  main: {
-    temp: number;
-  };
-  cod: number | string;
-}
+import type { WeatherData } from "../type/type";
 
 function Home() {
   const city = localStorage.getItem("city");
@@ -39,11 +33,6 @@ function Home() {
     <div className="w-full text-white bg-[#151515] flex justify-center h-auto">
       <div className="w-[70%] h-auto">
         <div className="w-full pt-10 pb-[100px] flex flex-col gap-3 justify-center items-center">
-          <input
-            type="search"
-            className="bg-[#3B3B3B] hover:bg-white w-[40%] border-none outline-none hover:text-[#2b2b2b] focus:bg-white duration-300 sm:p-1 lg:p-2 text-[#B0B0B0] rounded-3xl"
-            placeholder="search"
-          />
           {weather && (
             <p className="text-2xl font-bold">
               {Math.round(weather.main.temp)}°C

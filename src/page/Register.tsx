@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -131,14 +131,14 @@ const Register = () => {
             Submit
           </button>
 
-          <div className="flex flex-col gap-2 mt-6">
+          {/* <div className="flex flex-col gap-2 mt-6">
             <Link
               to="/login"
               className="text-sm underline text-center text-[#9e9e9e] hover:text-white duration-300"
             >
               Already have an account? Log in.
             </Link>
-          </div>
+          </div> */}
         </form>
       </div>
     </div>
